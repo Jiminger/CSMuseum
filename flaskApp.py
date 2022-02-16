@@ -1,11 +1,12 @@
+from flask import Flask
 import serial
 
+app = Flask(__name__)
 ser = serial.Serial('/dev/tty.usbmodem14101', 9600, timeout=1)
 ser.reset_input_buffer()
 
 
-def lightController():
-    user = input("Enter input: ")
+def lightController(user):
     if user == '1':
         x = '0'
         y = '60'
@@ -23,9 +24,18 @@ def lightController():
         ser.write(bytes(y, 'utf-8'))
 
 
-if __name__ == '__main__':
+@app.route('/')
+def hello():
+    lightController("1")
+    return 'all items lite!'
 
-    while True:
-        user = input("Enter x: ")
-        if user == 'x':
-            lightController()
+
+@app.route('/2')
+def hello2():
+    lightController("2")
+    return 'item 2'
+
+@app.route('/0')
+def hello3():
+    lightController("0")
+    return 'item 3'
