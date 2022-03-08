@@ -1,4 +1,6 @@
 from flask import Flask
+from flask import render_template
+
 import serial
 
 app = Flask(__name__)
@@ -25,9 +27,10 @@ def lightController(user):
 
 
 @app.route('/')
+@app.route('/home')
 def hello():
     lightController("1")
-    return 'all items lite!'
+    return render_template("index.html")
 
 
 @app.route('/2')
