@@ -2,5 +2,5 @@
 
 ### Troubleshooting
 - Serial Connection Permission Denied
--     Run : sudo usermod -a -G dialout www-data
--     Reboot
+  - Run : sudo usermod -a -G dialout www-data
+  - Reboot
