@@ -27,7 +27,6 @@ def lightController(user):
 
 
 @app.route('/')
-@app.route('/home')
 def hello():
     lightController("1")
     return render_template("index.html")
