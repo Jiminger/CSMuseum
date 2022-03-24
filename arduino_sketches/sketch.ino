@@ -51,7 +51,7 @@ void loop() {
     //set the value to the led
     leds[cur] = CRGB (r, g, b);
 
-    // set the colors set into the phisical LED
+    // set the colors set into the physical LED
     FastLED.show();
 
     // delay 50 millis

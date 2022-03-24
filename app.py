@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 
 import serial
+import arduinoController as controller
 
 app = Flask(__name__)
 ser = serial.Serial('/dev/tty.usbmodem14101', 9600, timeout=1)
@@ -27,17 +28,27 @@ def lightController(user):
 
 
 @app.route('/')
-def hello():
-    lightController("1")
+def index():
+    controller.light_entire_museum()
     return render_template("index.html")
 
 
-@app.route('/2')
-def hello2():
+# TODO
+"""
+@app.route('/case_one')
+def case1():
     lightController("2")
-    return 'item 2'
+    return 'case_1'
 
-@app.route('/0')
-def hello3():
+
+@app.route('/case_two')
+def case2():
     lightController("0")
-    return 'item 3'
+    return 'case_two'
+
+
+@app.route('/case_three')
+def case2():
+    lightController("0")
+    return 'case_3'
+"""
