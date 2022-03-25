@@ -5,10 +5,12 @@ import serial
 import arduinoController as controller
 
 app = Flask(__name__)
-ser = serial.Serial('/dev/tty.usbmodem14101', 9600, timeout=1)
-ser.reset_input_buffer()
 
+# Commented out for testing of the arduinoController class
+# ser = serial.Serial('/dev/tty.usbmodem14101', 9600, timeout=1)
+# ser.reset_input_buffer()
 
+"""
 def lightController(user):
     if user == '1':
         x = '0'
@@ -25,6 +27,7 @@ def lightController(user):
         y = '20'
         ser.write(bytes(x, 'utf-8'))
         ser.write(bytes(y, 'utf-8'))
+"""
 
 
 @app.route('/')
@@ -33,7 +36,7 @@ def index():
     return render_template("index.html")
 
 
-# TODO
+# TODO : route to other web pages
 """
 @app.route('/case_one')
 def case1():
