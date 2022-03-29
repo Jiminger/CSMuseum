@@ -27,7 +27,7 @@ def turn_on_case(case_number):
     elif case_number == "case_three":
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
-        ser3.write(indices[1].encode())
+        ser3.write(indices.encode())
 
 
 def turn_off_case(case_number):
@@ -76,7 +76,7 @@ def light_specific_item(case_number, item_id):
         # turn_off_case("case_two")
         #  ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
-        ser3.write(indices[1].encode())
+        ser3.write(indices.encode())
 
 
 """
