@@ -8,7 +8,7 @@ import db_controller as db
 # TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
-ser3 = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75135303739351508042-if00', 115200)
+ser3 = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75135303739351508042-if00', 115200,timeout=1000)
 ser3.reset_input_buffer()
 
 
