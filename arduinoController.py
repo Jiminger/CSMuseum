@@ -1,6 +1,8 @@
 import serial
 import mysql.connector
+import os
 from threading import Thread
+
 
 # TODO: Serial connections for other two cases
 
@@ -79,8 +81,8 @@ def light_specific_item(case_number, item_id):
 def get_item_indexes(case_number, item_id):
     my_db = mysql.connector.connect(
         host="localhost",
-        user="",
-        password="",
+        user=os.environ.get('DB_USER'),
+        password=os.environ.get('DB_PASS'),
         database="CSMuseum"
     )
 
