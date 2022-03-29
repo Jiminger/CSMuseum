@@ -22,7 +22,6 @@ void setup() {
   Serial.setTimeout(1);
 
   FastLED.clear(true);
-
 }
 
 void loop() {
@@ -36,6 +35,9 @@ void loop() {
 
 }
 
+// Method used to light a specific range of lights on the LED Strip (INCLUSIVE)
+// first = start index
+// last = end index
 void light(int first, int last){
 
   FastLED.clear(true);
