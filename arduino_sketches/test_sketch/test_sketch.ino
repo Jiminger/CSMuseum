@@ -19,7 +19,7 @@ void setup() {
 
   //Set up serial connection
   Serial.begin(115200);
-  Serial.setTimeout(1000);
+  Serial.setTimeout(1);
 
   FastLED.clear(true);
 }
