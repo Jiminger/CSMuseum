@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 
 import serial
-import arduinoController as controller
+import arduino_controller as controller
 
 app = Flask(__name__)
 
