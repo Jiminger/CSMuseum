@@ -3,6 +3,8 @@ import mysql.connector
 import os
 from threading import Thread
 
+import db_controller as db
+
 # TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
@@ -16,7 +18,7 @@ def format_input(start_index, end_index):
 
 
 def turn_on_case(case_number):
-    indices = get_item_indexes(case_number, 1)
+    indices = db.get_item_indexes(case_number, 1)
     if case_number == "case_one":
         pass
     elif case_number == "case_two":
@@ -25,7 +27,6 @@ def turn_on_case(case_number):
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
         ser3.write(indices[1].encode())
-
 
 
 def turn_off_case(case_number):
@@ -64,7 +65,7 @@ def light_specific_case(case_number):
 
 
 def light_specific_item(case_number, item_id):
-    indices = get_item_indexes(case_number, item_id)
+    indices = db.get_item_indexes(case_number, item_id)
     if case_number == "case_one":
         pass
     elif case_number == "case_two":
@@ -77,6 +78,7 @@ def light_specific_item(case_number, item_id):
         ser3.write(indices[1].encode())
 
 
+"""
 def get_item_indexes(case_number, item_id):
     my_db = mysql.connector.connect(
         host="localhost",
@@ -95,3 +97,4 @@ def get_item_indexes(case_number, item_id):
     my_db.close()
 
     return case_number, format_input(str(my_result[0][0]), str(my_result[0][1]))
+"""
