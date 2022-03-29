@@ -3,7 +3,6 @@ import mysql.connector
 import os
 from threading import Thread
 
-
 # TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
@@ -25,12 +24,8 @@ def turn_on_case(case_number):
     elif case_number == "case_three":
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
-<<<<<<< HEAD
-        ser3.write(bytes(indices[1].encode()), 'utf-8')
-=======
         ser3.write(indices[1])
         ser3.write(indices[1])
->>>>>>> 9fff066bfe3eeeb7fa618169daf49b0ed5dda1e1
 
 
 def turn_off_case(case_number):
