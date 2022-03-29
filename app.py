@@ -6,8 +6,7 @@ import arduino_controller as controller
 app = Flask(__name__)
 
 
-
-
+# Index Page
 @app.route('/')
 def index():
     controller.light_entire_museum()
