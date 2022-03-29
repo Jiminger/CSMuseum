@@ -31,6 +31,7 @@ void loop() {
     int first = data.substring(1,comma_index).toInt();
     int last = data.substring(comma_index+1,data.length()).toInt();
     light(first, last);
+    //serialFlush();
   }
 
 }
@@ -59,3 +60,10 @@ void light(int first, int last){
   
   }
 }
+
+void serialFlush(){
+  while(Serial.available()>0){
+    char t = Serial.read();
+  }
+}
+  
