@@ -1,9 +1,8 @@
 import serial
-import mysql.connector
-import os
+import db_controller as db
 from threading import Thread
 
-import db_controller as db
+
 
 # TODO: Serial connections for other two cases
 
@@ -36,7 +35,7 @@ def turn_off_case(case_number):
     elif case_number == "case_two":
         pass
     elif case_number == "case_three":
-        ser3.write('<1,1>'.encode())
+        ser3.write('<-1,-1>'.encode())
         # ser3.write(bytes('-1', 'utf-8'))
 
 
