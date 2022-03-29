@@ -81,8 +81,8 @@ def light_specific_item(case_number, item_id):
 def get_item_indexes(case_number, item_id):
     my_db = mysql.connector.connect(
         host="localhost",
-        user=os.environ.get('DB_USER'),
-        password=os.environ.get('DB_PASS'),
+        user=os.environ['DB_USER'],
+        password=os.environ['DB_PASS'],
         database="CSMuseum"
     )
 
