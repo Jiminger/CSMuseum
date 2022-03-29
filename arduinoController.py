@@ -25,7 +25,12 @@ def turn_on_case(case_number):
     elif case_number == "case_three":
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
+<<<<<<< HEAD
         ser3.write(bytes(indices[1].encode()), 'utf-8')
+=======
+        ser3.write(indices[1])
+        ser3.write(indices[1])
+>>>>>>> 9fff066bfe3eeeb7fa618169daf49b0ed5dda1e1
 
 
 def turn_off_case(case_number):
@@ -34,7 +39,7 @@ def turn_off_case(case_number):
     elif case_number == "case_two":
         pass
     elif case_number == "case_three":
-        ser3.write(bytes('<-1,-1>'.encode()), 'utf-8')
+        ser3.write('<1,1>')
         # ser3.write(bytes('-1', 'utf-8'))
 
 
@@ -74,7 +79,7 @@ def light_specific_item(case_number, item_id):
         # turn_off_case("case_two")
         #  ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
-        ser3.write(bytes(indices[1].encode()), 'utf-8')
+        ser3.write(indices[1])
 
 
 def get_item_indexes(case_number, item_id):
@@ -94,4 +99,4 @@ def get_item_indexes(case_number, item_id):
     my_cursor.close()
     my_db.close()
 
-    return case_number, format_input(my_result[0][0], my_result[0][1])
+    return case_number, format_input(str(my_result[0][0]), str(my_result[0][1]))
