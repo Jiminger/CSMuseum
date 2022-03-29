@@ -5,7 +5,7 @@ from threading import Thread
 # TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
-ser3 = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75135303739351508042-if00', 9600, timeout=1)
+ser3 = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75135303739351508042-if00', 115200, timeout=1)
 ser3.reset_input_buffer()
 
 
