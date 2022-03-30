@@ -13,7 +13,15 @@
     padding: 12px;
 }
 
+.img-container img{
+  height: 400px;
+}
 
+.body-title{
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+}
 
 .nav-item{
     font-size: 26px;
@@ -22,7 +30,6 @@
 .source-code{
     font-size: 24px
 }
-
 
 .row {
     display: flex;
