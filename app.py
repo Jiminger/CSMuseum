@@ -17,15 +17,18 @@ def index():
 @app.route('/case_1')
 def case_1():
     controller.turn_on_case(1)
+    return render_template("case_1.html")
 
 
 # Case Two Pages
 @app.route('/case_2')
 def case_2():
     controller.turn_on_case(2)
+    return render_template("case_2.html")
 
 
 # Case Three Pages
 @app.route('/case_3')
 def case_3():
     controller.turn_on_case(3)
+    return render_template("case_3.html")
