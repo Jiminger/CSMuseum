@@ -1,11 +1,11 @@
 import mysql.connector
-
+import info
 
 def open_connection():
     my_db = mysql.connector.connect(
         host="localhost",
-        user='',
-        password='',
+        user=info.get_db_user(),
+        password=info.get_db_pass(),
         database="CSMuseum"
     )
 

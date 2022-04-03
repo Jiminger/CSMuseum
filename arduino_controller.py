@@ -15,24 +15,24 @@ def format_input(start_index, end_index):
     return '<' + str(start_index) + ',' + str(end_index) + '>'
 
 
-def turn_on_case(case_number):
-    indices = db.get_item_indexes(case_number, 1)
-    if case_number == "case_one":
+def turn_on_case(case_id):
+    indices = db.get_item_indexes(case_id, 0)
+    if case_number == 1:
         pass
-    elif case_number == "case_two":
+    elif case_number == 2:
         pass
-    elif case_number == "case_three":
+    elif case_number == 3:
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
         ser3.write(indices.encode())
 
 
-def turn_off_case(case_number):
-    if case_number == "case_one":
+def turn_off_case(case_id):
+    if case_number == 1:
         pass
-    elif case_number == "case_two":
+    elif case_number == 2:
         pass
-    elif case_number == "case_three":
+    elif case_number == 3:
         ser3.write('<-1,-1>'.encode())
         # ser3.write(bytes('-1', 'utf-8'))
 
@@ -40,7 +40,7 @@ def turn_off_case(case_number):
 def light_entire_museum():
     # thread_one = Thread(target=turn_on_case("case_one"))
     # thread_two = Thread(target=turn_on_case("case_two"))
-    thread_three = Thread(target=turn_on_case("case_three"))
+    thread_three = Thread(target=turn_on_case(3))
 
     # thread_one.start()
     # thread_two.start()
@@ -51,15 +51,15 @@ def light_entire_museum():
     thread_three.join()
 
 
-def light_specific_case(case_number):
-    if case_number == "case_one":
+def light_specific_case(case_id):
+    if case_number == 1:
         pass
-    elif case_number == "case_two":
+    elif case_number == 2:
         pass
-    elif case_number == "case_three":
+    elif case_number == 3:
         #    turn_off_case("case_one")
         #   turn_off_case("case_two")
-        turn_on_case("case_three")
+        turn_on_case(3)
 
 
 def light_specific_item(case_number, item_id):
