@@ -24,7 +24,7 @@ def insert_into_table(values):
     start_index = values[5]
     end_index = values[6]
 
-    sql_insert = "INSERT INTO customers (case_id, item_id, item_name, item_desc, img_path, start_index, end_index) " \
+    sql_insert = "INSERT INTO Items (case_id, item_id, item_name, item_desc, img_path, start_index, end_index) " \
                  "VALUES {},{},{},{},{},{},{}".format(case_id, item_id, item_name, item_desc, img_path, start_index,
                                                       end_index)
     my_cursor.execute(sql_insert)
