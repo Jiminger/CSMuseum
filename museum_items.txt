@@ -1,16 +1,15 @@
-#case_id,item_id,item_desc,img_path,start_index,end_index
+#case_id	item_id	item_name	item_desc	img_path	start_index	end_index
 #img_path = /static/images/items/ ...
-
 # Case 3
-3,0,Case 3,NULL,NULL,0,60
-3,1,RCA COSMAC VIP,[PLACEHOLDER],/static/images/items/rca-cosmac-vip.jpg,0,4
-3,2,Micro Computer Project,[PLACEHOLDER],/static/images/items/micro-computer-project.jpg,5,9
-3,3,Early Learning Computers for Practicing Machine Language,[PLACEHOLDER],/static/images/items/early-learning-computers.jpg,10,14
-3,4,TI 99/4A,[PLACEHOLDER],/static/images/items/TI99-4A.jpg,15,19
-3,5,Timex Sinclair Computer,[PLACEHOLDER],/static/images/items/timex-sinclar.jpg,20,24
-3,6,Commodore 64,[PLACEHOLDER],/static/images/items/Commodore-64.jpg,25,29
-3,7,Macintosh Plus,[PLACEHOLDER],/static/images/items/Macintosh-Plus.JPG,30,34
-3,8,Apple Lisa 2,[PLACEHOLDER],/static/images/items/apple-lisa-2.jpg,35,39
-3,9,Apple II Plus,[PLACEHOLDER],/static/images/items/Apple-II-plus.jpg,40,44
-3,10,Apple III Plus,[PLACEHOLDER],/static/images/items/Apple_III_Plus.jpg,45,49
-3,11,Zenith Data Systems MinisPort,[PLACEHOLDER],/static/images/items/zenith-minisport.jpg,50,55
+3	0	Case 3	NULL	NULL	0	60
+3	1	RCA COSMAC VIP	[PLACEHOLDER]	/static/images/items/rca-cosmac-vip.jpg	0	4
+3	2	Micro Computer Project	[PLACEHOLDER]	/static/images/items/micro-computer-project.jpg	5	9
+3	3	Early Learning Computers for Practicing Machine Language	[PLACEHOLDER]	/static/images/items/early-learning-computers.jpg	10	14
+3	4	TI 99/4A	[PLACEHOLDER]	/static/images/items/TI99-4A.jpg	15	19
+3	5	Timex Sinclair Computer	[PLACEHOLDER]	/static/images/items/timex-sinclar.jpg	20	24
+3	6	Commodore 64	[PLACEHOLDER]	/static/images/items/Commodore-64.jpg	25	29
+3	7	Macintosh Plus	[PLACEHOLDER]	/static/images/items/Macintosh-Plus.JPG	30	34
+3	8	Apple Lisa 2	[PLACEHOLDER]	/static/images/items/apple-lisa-2.jpg	35	39
+3	9	Apple II Plus	[PLACEHOLDER]	/static/images/items/Apple-II-plus.jpg	40	44
+3	10	Apple III Plus	[PLACEHOLDER]	/static/images/items/Apple_III_Plus.jpg	45	49
+3	11	Zenith Data Systems MinisPort	[PLACEHOLDER]	/static/images/items/zenith-minisport.jpg	50	55
