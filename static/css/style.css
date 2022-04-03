@@ -73,6 +73,7 @@
 
     .img-and-description-container img{
       height: 400px;
+      max-width: 90%;
     }
     
   }
