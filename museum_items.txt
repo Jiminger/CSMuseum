@@ -12,4 +12,4 @@
 3	8	Apple Lisa 2	[PLACEHOLDER]	/static/images/items/apple-lisa-2.jpg	35	39
 3	9	Apple II Plus	[PLACEHOLDER]	/static/images/items/Apple-II-plus.jpg	40	44
 3	10	Apple III Plus	[PLACEHOLDER]	/static/images/items/Apple_III_Plus.jpg	45	49
-3	11	Zenith Data Systems MinisPort	[PLACEHOLDER]	/static/images/items/zenith-minisport.jpg	50	55
+3	11	Zenith Data Systems MinisPort	[PLACEHOLDER]	/static/images/items/zenith-minisport.jpg	50	54
