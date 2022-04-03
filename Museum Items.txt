@@ -1,13 +1,13 @@
 # Case 3
 3,0,Case 3,NULL,NULL,0,60
-3,1,RCA COSMAC VIP
+3,1,RCA COSMAC VIP,
 3,2,Micro Computer Project,
 3,3,Early Learning Computers for Practicing Machine Language,
-3,4,TI 99/4A
+3,4,TI 99/4A,
 3,5,Timex Sinclair Computer,
 3,6,Commodore 64,
 3,7,Macintosh Plus,
 3,8,Apple Lisa 2,
 3,9,Apple II Plus,
 3,10,Apple III Plus,
-3,11,Zenith Data Systems MinisPort
+3,11,Zenith Data Systems MinisPort,
