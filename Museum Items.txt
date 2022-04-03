@@ -4,13 +4,13 @@
 # Case 3
 3,0,Case 3,NULL,NULL,0,60
 3,1,RCA COSMAC VIP,The COSMAC VIP (1977) [VIP means Video Interface Processor] was an early microcomputer that was aimed at video games. Essentially, it was a COSMAC ELF with a supplementary CDP1861/CDP1864 video display chip. For a price of US$275, it could be purchased from RCA by mail order. It came in kit form, and had to be assembled. Its dimensions were 22 x 28 cm, and it had a RCA 1802 processor; along with a crystal clock operating at 1.76 MHz.[a] It had 2 KB (2048 bytes) of RAM, which could be expanded to 4 KB on board, and 32 KB via an expansion slot. Its 5V DC CDP18S023 power supply had an output of 600 mA. I/O ports could be added to connect to sensors, interface relays, an ASCII keyboard, or a printer.,/static/images/items/rca-cosmac-vip.jpg,/static/images/items/rca-cosmac-vip.jpg,0,4
-3,2,Micro Computer Project,
-3,3,Early Learning Computers for Practicing Machine Language,
-3,4,TI 99/4A,
-3,5,Timex Sinclair Computer,
-3,6,Commodore 64,
-3,7,Macintosh Plus,
-3,8,Apple Lisa 2,
-3,9,Apple II Plus,
-3,10,Apple III Plus,
-3,11,Zenith Data Systems MinisPort,
+3,2,Micro Computer Project,[PLACEHOLDER],/static/images/items/micro-computer-project.jpg,5,9
+3,3,Early Learning Computers for Practicing Machine Language,[PLACEHOLDER],/static/images/items/early-learning-computers.jpg,10,14
+3,4,TI 99/4A,[PLACEHOLDER],/static/images/items/TI99-4A.jpg,15,19
+3,5,Timex Sinclair Computer,[PLACEHOLDER],/static/images/items/timex-sinclar.jpg,20,24
+3,6,Commodore 64,[PLACEHOLDER],/static/images/items/Commodore-64.jpg,25,29
+3,7,Macintosh Plus,[PLACEHOLDER],/static/images/items/Macintosh-Plus.JPG,30,34
+3,8,Apple Lisa 2,[PLACEHOLDER],/static/images/items/apple-lisa-2.jpg,35,39
+3,9,Apple II Plus,[PLACEHOLDER],/static/images/items/Apple-II-plus.jpg,40,44
+3,10,Apple III Plus,[PLACEHOLDER],/static/images/items/Apple_III_Plus.jpg,45,49
+3,11,Zenith Data Systems MinisPort,[PLACEHOLDER],/static/images/items/zenith-minisport.jpg,50,55
