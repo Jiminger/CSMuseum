@@ -37,7 +37,7 @@ def case_3():
 
 @app.route('/case_<case_id>/item_<item_id>')
 def item_page(case_id, item_id):
-    item_info = db_controller.get_item_information(case_id,item_id)
+    # item_info = db_controller.get_item_information(case_id,item_id)
     return render_template("item.html", item_name=item_info[0], item_desc=item_info[1], img_path=item_info[2])
 
 
