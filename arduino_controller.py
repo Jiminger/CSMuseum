@@ -2,8 +2,6 @@ import serial
 import db_controller as db
 from threading import Thread
 
-
-
 # TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
