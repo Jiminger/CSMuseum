@@ -17,22 +17,22 @@ def format_input(start_index, end_index):
 
 def turn_on_case(case_id):
     indices = db.get_item_indexes(case_id, 0)
-    if case_number == 1:
+    if case_id == 1:
         pass
-    elif case_number == 2:
+    elif case_id == 2:
         pass
-    elif case_number == 3:
+    elif case_id == 3:
         # ser3.write(bytes(str(indices[1]), 'utf-8'))
         # ser3.write(bytes(str(indices[2]), 'utf-8'))
         ser3.write(indices.encode())
 
 
 def turn_off_case(case_id):
-    if case_number == 1:
+    if case_id == 1:
         pass
-    elif case_number == 2:
+    elif case_id == 2:
         pass
-    elif case_number == 3:
+    elif case_id == 3:
         ser3.write('<-1,-1>'.encode())
         # ser3.write(bytes('-1', 'utf-8'))
 
@@ -52,23 +52,23 @@ def light_entire_museum():
 
 
 def light_specific_case(case_id):
-    if case_number == 1:
+    if case_id == 1:
         pass
-    elif case_number == 2:
+    elif case_id == 2:
         pass
-    elif case_number == 3:
+    elif case_id == 3:
         #    turn_off_case("case_one")
         #   turn_off_case("case_two")
         turn_on_case(3)
 
 
-def light_specific_item(case_number, item_id):
-    indices = db.get_item_indexes(case_number, item_id)
-    if case_number == "case_one":
+def light_specific_item(case_id, item_id):
+    indices = db.get_item_indexes(case_id, item_id)
+    if case_id == "case_one":
         pass
-    elif case_number == "case_two":
+    elif case_id == "case_two":
         pass
-    elif case_number == "case_three":
+    elif case_id == "case_three":
         #  turn_off_case("case_one")
         # turn_off_case("case_two")
         #  ser3.write(bytes(str(indices[1]), 'utf-8'))
@@ -77,7 +77,7 @@ def light_specific_item(case_number, item_id):
 
 
 """
-def get_item_indexes(case_number, item_id):
+def get_item_indexes(case_id, item_id):
     my_db = mysql.connector.connect(
         host="localhost",
         user='',
@@ -87,12 +87,12 @@ def get_item_indexes(case_number, item_id):
 
     my_cursor = my_db.cursor()
 
-    my_cursor.execute("SELECT start_index, end_index FROM " + case_number + " WHERE item_id =" + str(item_id))
+    my_cursor.execute("SELECT start_index, end_index FROM " + case_id + " WHERE item_id =" + str(item_id))
 
     my_result = my_cursor.fetchall()
 
     my_cursor.close()
     my_db.close()
 
-    return case_number, format_input(str(my_result[0][0]), str(my_result[0][1]))
+    return case_id, format_input(str(my_result[0][0]), str(my_result[0][1]))
 """
