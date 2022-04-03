@@ -3,7 +3,7 @@
 
 # Case 3
 3,0,Case 3,NULL,NULL,0,60
-3,1,RCA COSMAC VIP,[PLACEHOLDER],/static/images/items/rca-cosmac-vip.jpg,/static/images/items/rca-cosmac-vip.jpg,0,4
+3,1,RCA COSMAC VIP,[PLACEHOLDER],/static/images/items/rca-cosmac-vip.jpg,0,4
 3,2,Micro Computer Project,[PLACEHOLDER],/static/images/items/micro-computer-project.jpg,5,9
 3,3,Early Learning Computers for Practicing Machine Language,[PLACEHOLDER],/static/images/items/early-learning-computers.jpg,10,14
 3,4,TI 99/4A,[PLACEHOLDER],/static/images/items/TI99-4A.jpg,15,19
