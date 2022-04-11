@@ -27,7 +27,7 @@ def get_item_indexes(case_id, item_id):
     connection = open_connection()
     my_cursor = connection[1]
     my_cursor.execute("SELECT start_index, end_index FROM Items WHERE case_id=" + str(case_id) +
-                      "AND item_id =" + str(item_id)) + ";"
+                      " AND item_id =" + str(item_id)) + ";"
 
     my_result = my_cursor.fetchall()
 
