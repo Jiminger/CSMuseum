@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 
-# import arduino_controller
+import arduino_controller
 import db_controller
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Index Page
 @app.route('/')
 def index():
-    # controller.light_entire_museum()
+    arduino_controller.light_entire_museum()
     return render_template("index.html")
 
 
