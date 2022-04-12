@@ -35,11 +35,7 @@
   padding: 10px;
 }
 
-.figure{
-    text-align : center;
-    justify-content: center;
-    align-items: center;
-}
+.figure {display: table;margin-right: auto;margin-left: auto;}
 
 .body-title{
   text-align: center;
