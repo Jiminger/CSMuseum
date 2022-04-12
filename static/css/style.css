@@ -33,7 +33,10 @@
   font-size: 20px;
   gap: 20px;
   padding: 10px;
-  text-align:center;
+}
+
+.figure{
+    text-align : center;
 }
 
 .body-title{
