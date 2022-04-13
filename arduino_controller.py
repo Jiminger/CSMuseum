@@ -22,8 +22,6 @@ def turn_on_case(case_id):
     elif case_id == 2:
         pass
     elif case_id == 3:
-        # ser3.write(bytes(str(indices[1]), 'utf-8'))
-        # ser3.write(bytes(str(indices[2]), 'utf-8'))
         ser3.write(indices.encode())
 
 
@@ -34,7 +32,6 @@ def turn_off_case(case_id):
         pass
     elif case_id == 3:
         ser3.write('<-1,-1>'.encode())
-        # ser3.write(bytes('-1', 'utf-8'))
 
 
 def light_entire_museum():
@@ -57,8 +54,8 @@ def light_specific_case(case_id):
     elif case_id == 2:
         pass
     elif case_id == 3:
-        #    turn_off_case("case_one")
-        #   turn_off_case("case_two")
+        #   turn_off_case(1)
+        #   turn_off_case(2)
         turn_on_case(3)
 
 
