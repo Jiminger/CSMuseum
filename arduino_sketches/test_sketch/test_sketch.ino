@@ -2,7 +2,7 @@
 #include<FastLED.h>
 
 //define number of LED and pin
-#define NUM_LEDS 60
+#define NUM_LEDS 240
 #define DATA_PIN 7
 
 // create the ld object array
@@ -22,6 +22,7 @@ void setup() {
   Serial.setTimeout(1);
 
   FastLED.clear(true);
+  FastLED.show();
 }
 
 void loop() {
@@ -31,7 +32,7 @@ void loop() {
     int first = data.substring(1,comma_index).toInt();
     int last = data.substring(comma_index+1,data.length()).toInt();
     light(first, last);
-    //serialFlush();
+
   }
 
 }
