@@ -9,20 +9,26 @@
 
 .img-container{
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
     padding: 12px;
     
 }
 
+.figure{
+  border: 5px solid #341;
+  padding: 25px;
+  text-align: center;
+  font-size: 50px;
+}
+
 .img-container img{
-  height: 400px;
+  height: 500px;
   justify-content: center;
   align-items: center;
 }
 
 .img-and-description-container img{
-  height: 400px;
+  height: 500px;
 }
 
 .img-and-description-container{
@@ -48,6 +54,7 @@
 .source-code{
     font-size: 24px
 }
+
 
 .row {
     display: flex;
