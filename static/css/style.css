@@ -8,11 +8,10 @@
 }
 
 .img-container{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 12px;
-    flex-direction: column;
     
 }
 
