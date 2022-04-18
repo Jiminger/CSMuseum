@@ -2,7 +2,6 @@ import serial
 import db_controller as db
 from threading import Thread
 
-# TODO: Serial connections for other two cases
 
 # Case 3 Serial Connection
 ser3 = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75135303739351508042-if00', 115200,
@@ -68,28 +67,6 @@ def light_specific_item(case_id, item_id):
     elif case_id == "3":
         #  turn_off_case("case_one")
         # turn_off_case("case_two")
-        #  ser3.write(bytes(str(indices[1]), 'utf-8'))
-        # ser3.write(bytes(str(indices[2]), 'utf-8'))
         ser3.write(indices.encode())
 
 
-"""
-def get_item_indexes(case_id, item_id):
-    my_db = mysql.connector.connect(
-        host="localhost",
-        user='',
-        password='',
-        database="CSMuseum"
-    )
-
-    my_cursor = my_db.cursor()
-
-    my_cursor.execute("SELECT start_index, end_index FROM " + case_id + " WHERE item_id =" + str(item_id))
-
-    my_result = my_cursor.fetchall()
-
-    my_cursor.close()
-    my_db.close()
-
-    return case_id, format_input(str(my_result[0][0]), str(my_result[0][1]))
-"""
