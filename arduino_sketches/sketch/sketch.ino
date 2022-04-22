@@ -2,7 +2,7 @@
 #include<FastLED.h>
 
 //define number of LED and pin
-#define NUM_LEDS 240
+#define NUM_LEDS 150
 #define DATA_PIN 7
 
 // create the ld object array
