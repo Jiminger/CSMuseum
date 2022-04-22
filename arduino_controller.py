@@ -60,11 +60,11 @@ def light_specific_case(case_id):
 
 def light_specific_item(case_id, item_id):
     indices = db.get_item_indexes(case_id, item_id)
-    if case_id == "1":
+    if case_id == 1:
         pass
-    elif case_id == "2":
+    elif case_id == 2:
         pass
-    elif case_id == "3":
+    elif case_id == 3:
         #  turn_off_case("case_one")
         # turn_off_case("case_two")
         ser3.write(indices.encode())
