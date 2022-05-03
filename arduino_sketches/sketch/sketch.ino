@@ -5,6 +5,11 @@
 #define NUM_LEDS 150
 #define DATA_PIN 7
 
+//timer
+unsigned long startMillis;
+unsigned long currentMillis;
+const unsigned long period = 60000;
+
 // create the ld object array
 CRGB leds[NUM_LEDS];
 
@@ -23,15 +28,26 @@ void setup() {
 
   FastLED.clear(true);
   FastLED.show();
+
+  startMillis = millis();
 }
 
 void loop() {
+
+  currentMillis = millis();
+  if(currentMillis - startMillis >= period){
+    FastLED.clear(true);
+    FastLED.show();
+    startMillis = millis();
+  }
+  
   if(Serial.available()>0){
     String data = Serial.readStringUntil('>');
     int comma_index = data.indexOf(',');
     int first = data.substring(1,comma_index).toInt();
     int last = data.substring(comma_index+1,data.length()).toInt();
     light(first, last);
+    startMillis = millis();
 
   }
 
